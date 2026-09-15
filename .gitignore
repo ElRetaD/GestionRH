@@ -1,0 +1,43 @@
+# ─── Python ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ─── Données locales (NE JAMAIS versionner) ───────────────
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+data/settings.json
+
+# ─── Exports générés (fiches de paie, rapports) ──────────
+exports/*.pdf
+exports/*.xlsx
+exports/*.csv
+
+# ─── QR Codes générés (badges employés) ──────────────────
+assets/qrcodes/*.png
+assets/qrcodes/*.svg
+
+# ─── Éditeurs & IDE ──────────────────────────────────────
+.vscode/
+.cursor/
+.idea/
+*.swp
+*.swo
+*~
+
+# ─── OS ──────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Environnements virtuels ─────────────────────────────
+venv/
+.venv/
+env/
+.env/
