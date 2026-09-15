@@ -1,6 +1,6 @@
-# 📊 GestPrésences — Système de Gestion des Présences des Employés
+# 📊 GestRH — Système de Gestion des Ressources Humaines
 
-Application desktop professionnelle développée en Python/PySide6 pour la gestion complète des présences des employés.
+Application desktop professionnelle développée en **Python / PySide6** pour la gestion intégrée des ressources humaines : employés, présences, absences, paie et rapports.
 
 ## 🚀 Lancement rapide
 
@@ -14,10 +14,11 @@ python main.py
 
 ## 🔐 Comptes par défaut
 
-| Rôle          | Nom d'utilisateur | Mot de passe |
-|---------------|-------------------|--------------|
-| Administrateur | `admin`          | `Admin@2024` |
-| Agent          | `agent`          | `Agent@2024` |
+| Rôle           | Nom d'utilisateur | Mot de passe    |
+|----------------|-------------------|-----------------|
+| Administrateur | `admin`           | `Admin@2024`    |
+| Agent          | `agent`           | `Agent@2024`    |
+| Comptable      | `comptable`       | `Comptable@2024`|
 
 > ⚠️ Changez les mots de passe après la première connexion !
 
@@ -37,6 +38,12 @@ python main.py
 - **Rechercher** un employé par nom ou QR code (lecteur USB)
 - **Enregistrer** : Entrée, Sortie, Absence, Congé
 - **Consulter** les présences du jour
+
+### 💰 Comptable
+- **Tableau de bord financier** — Vue d'ensemble des salaires et charges
+- **Gestion des salaires** — Configuration des salaires de base et taux horaires
+- **Bulletins de paie** — Génération et export des fiches de paie PDF
+- **Masse salariale** — Suivi des primes, déductions et heures supplémentaires
 
 ## 🔲 Système QR Code
 
@@ -65,7 +72,7 @@ Questions supportées :
 ## 📁 Structure du projet
 
 ```
-Gestion/
+GestRH/
 ├── main.py                    # Point d'entrée
 ├── requirements.txt           # Dépendances
 │
@@ -77,16 +84,19 @@ Gestion/
 │   │   ├── auth_service.py    # Authentification bcrypt
 │   │   ├── employee_service.py
 │   │   ├── attendance_service.py
+│   │   ├── payroll_service.py # Gestion de la paie
+│   │   ├── payslip_pdf_service.py # Génération fiches de paie PDF
 │   │   ├── qr_service.py      # Génération QR codes
 │   │   ├── report_service.py  # Export Excel/CSV/PDF
 │   │   └── ai_service.py      # IA locale
 │   ├── views/admin/           # Vues administrateur
 │   ├── views/agent/           # Vues agent
+│   ├── views/comptable/       # Vues comptable
 │   ├── widgets/               # Composants réutilisables
 │   └── utils/theme.py         # Thème dark professionnel
 │
 ├── assets/qrcodes/            # QR codes générés
-├── exports/                   # Fichiers exportés
+├── exports/                   # Fichiers exportés (rapports, fiches de paie)
 └── data/presences.db          # Base de données SQLite
 ```
 
@@ -115,7 +125,7 @@ bcrypt        — Hashage sécurisé des mots de passe
 ## 🛡️ Sécurité
 
 - Mots de passe hashés avec **bcrypt** (jamais stockés en clair)
-- Système de rôles strict (Admin / Agent)
+- Système de rôles strict (Admin / Agent / Comptable)
 - Historique complet de toutes les actions
 
 ---

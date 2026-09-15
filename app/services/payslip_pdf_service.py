@@ -76,7 +76,7 @@ class PayslipPdfService:
 
         story = []
         story.append(Paragraph("FICHE DE PAIE", title_style))
-        story.append(Paragraph("GestPrésences — Gestion RH", sub_style))
+        story.append(Paragraph("GestRH — Gestion des Ressources Humaines", sub_style))
         story.append(HRFlowable(width="100%", thickness=2, color=colors.HexColor("#2D9CDB")))
         story.append(Spacer(1, 0.5 * cm))
 

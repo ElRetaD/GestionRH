@@ -20,7 +20,7 @@ class MainWindow(QMainWindow):
     def __init__(self, user: Utilisateur, parent=None):
         super().__init__(parent)
         self.user = user
-        self.setWindowTitle(f"GestPrésences - {user.nom_complet}")
+        self.setWindowTitle(f"GestRH - {user.nom_complet}")
         self._setup_responsive_size()
         self._views: dict[str, QWidget] = {}
         self._build_ui()

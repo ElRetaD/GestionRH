@@ -19,7 +19,7 @@ for directory in [DATA_DIR, QR_DIR, EXPORT_DIR, ASSETS_DIR]:
     os.makedirs(directory, exist_ok=True)
 
 # ─── Informations de l'application ─────────────────────────────────────────────
-APP_NAME    = "Système de Gestion des Présences"
+APP_NAME    = "GestRH — Gestion des Ressources Humaines"
 APP_VERSION = "1.0.0"
 APP_AUTHOR  = "RCA Systems"
 

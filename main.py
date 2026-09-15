@@ -27,12 +27,12 @@ def main():
         import ctypes
         try:
             # Assigne un ID d'application unique pour que Windows affiche notre icône personnalisée sur la barre des tâches
-            ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("sbzs.hr.gestpresences.1.0")
+            ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("rca.hr.gestrh.1.0")
         except Exception:
             pass
 
     app = QApplication(sys.argv)
-    app.setApplicationName("GestPrésences")
+    app.setApplicationName("GestRH")
     app.setApplicationVersion("1.0.0")
     app.setOrganizationName("RCA Systems")
     app.setStyle("Fusion")

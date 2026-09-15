@@ -349,7 +349,7 @@ class LoginWindow(QWidget):
 
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.setWindowTitle("GestPrésences — Connexion")
+        self.setWindowTitle("GestRH — Connexion")
         self.setMinimumSize(800, 600)
         self.resize(1100, 750)
 
@@ -486,7 +486,7 @@ class LoginWindow(QWidget):
         cl.addSpacing(14)
 
         # App name
-        app_name = QLabel("GestPrésences")
+        app_name = QLabel("GestRH")
         app_name.setAlignment(Qt.AlignCenter)
         app_name.setFont(QFont("Segoe UI", 15, QFont.Bold))
         app_name.setStyleSheet(

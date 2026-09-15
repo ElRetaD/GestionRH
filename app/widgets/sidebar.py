@@ -216,7 +216,7 @@ class Sidebar(QWidget):
 
         brand_text = QVBoxLayout()
         brand_text.setSpacing(1)
-        app_name = QLabel("GestPrésences")
+        app_name = QLabel("GestRH")
         app_name.setFont(QFont("Segoe UI", 14, QFont.Bold))
         app_name.setStyleSheet(f"color: {COLORS['text_primary']};")
         app_sub = QLabel("Gestion RH")
