@@ -128,6 +128,10 @@ bcrypt        — Hashage sécurisé des mots de passe
 - Système de rôles strict (Admin / Agent / Comptable)
 - Historique complet de toutes les actions
 
+## 📄 Licence
+
+Ce projet est sous licence **MIT** — voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
 ---
 
 Développé avec ❤️ par **RCA Systems** | v1.0.0
